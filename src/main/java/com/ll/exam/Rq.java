@@ -79,7 +79,9 @@ public class Rq {
     public String getPath() {
         return req.getRequestURI();
     }
-
+    public String getMethod() {
+        return req.getMethod();
+    }
     public String getActionPath() {
         String[] bits = req.getRequestURI().split("/");
 
